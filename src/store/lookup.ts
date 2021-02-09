@@ -297,7 +297,7 @@ async function lookupCard(
 
 		if (config.browser.open) {
 			await (link.openCartAction === undefined
-				? open(givenUrl, {app: 'chrome'})
+				? open(givenUrl)
 				: link.openCartAction(browser));
 		}
 
